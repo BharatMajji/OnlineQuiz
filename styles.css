@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('quiz.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Ensures the background is centered */
+    height: 100vh; /* Ensures the background covers the entire screen */
+    color: rgb(0, 0, 0); /* Dark text for the content */
+}
+
+.quiz-container {
+    /* size:900px; */
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 120px;
+    padding: 10px;
+    background: rgba(29, 21, 21, 0.8); /* Slightly transparent dark background */
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* More subtle and enhanced shadow */
+    color: #d54c87; /* Soft pink text color for emphasis */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e636e6; /* Bright yellow for question */
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border:solid sienna ;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+    background-color: #3498db; /* Blue background for options */
+    color: rgb(7, 6, 6); /* Dark text color for options */
+}
+
+.option:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.correct {
+    background-color: #2ecc71 !important; /* Green for correct answers */
+}
+
+.wrong {
+    background-color: #e74c3c !important; /* Red for wrong answers */
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #1abc9c; /* Teal for the Next button */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #16a085; /* Darker teal on hover */
+}
+
+button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#scoreDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #f39c12; /* Bright yellow for the score */
+}
+
+#result {
+    font-size: 26px;
+    font-weight: bold;
+    color: #e67e22; /* Vibrant orange for the result message */
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
